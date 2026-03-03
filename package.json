@@ -1,0 +1,38 @@
+{
+  "name": "mindlang-realtime-server",
+  "version": "1.0.0",
+  "description": "Socket + Stream으로 만든 MindLang 기반 실시간 통신 및 파일 전송 시스템",
+  "main": "src/websocket-like.ts",
+  "scripts": {
+    "dev": "ts-node src/websocket-like.ts",
+    "examples:echo": "ts-node examples/01-echo-server.ts",
+    "examples:chat": "ts-node examples/02-chat-server.ts",
+    "examples:file": "ts-node examples/03-file-transfer.ts",
+    "examples:streaming": "ts-node examples/04-streaming-api.ts",
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "mindlang",
+    "realtime",
+    "socket",
+    "stream",
+    "chat",
+    "file-transfer",
+    "websocket",
+    "networking"
+  ],
+  "author": "Claude",
+  "license": "MIT",
+  "dependencies": {
+    "mindlang": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}
